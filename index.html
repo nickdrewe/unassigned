@@ -18,7 +18,7 @@
 	</div>
 	<div class="projects" ng-controller="projectCtrl">
 		<div class="project" ng-repeat="project in projects" back-img="{{project.backImg}}" back-overlay="//i.imgur.com/YJ1NDfw.png" ng-class="{'project-top': $first, 'project-pattern': project.pattern}">
-			<div class="project-container">
+			<div class="project-container" ng-class-odd="'project-right'">
 				<div>
 					<div class="project-type project-detail" ng-if="project.type">
 						{{project.type}}
