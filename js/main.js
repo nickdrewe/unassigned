@@ -1,10 +1,10 @@
 var app = angular.module('unassigned', [])
-.controller('projectCtrl', ['$scope', function($scope){
-	$scope.projects = [
+.controller('listCtrl', ['$scope', function($scope){
+	$scope.list = [
 	{
 		'type': 'We\'re Building',
-		'title': 'Ruffle - Send an Anonymous Picture Message to Any Phone Number',
-		'subtitle': 'Really.',
+		'title': 'Ruffle',
+		'subtitle': 'Send an Anonymous Picture Message to Any Phone Number',
 		'authorLink': '',
 		'backImg': 'http://ruffle.us/images/bg.jpg',
 		'link': 'http://ruffle.us'
@@ -21,7 +21,7 @@ var app = angular.module('unassigned', [])
 		'type': 'Nonsense',
 		'title': 'These 23 Times BuzzFeed Tweeted About 393 Other Tweets',
 		'subtitle': 'Prove BuzzFeed Has A Twitter Problem',
-		'author': 'By Nick Drewe',
+		'author': 'By Nick Drewe on Medium',
 		'authorLink': '',
 		'backImg': 'http://i.imgur.com/9P3GH87.jpg',
 		'pattern': true,
@@ -52,8 +52,7 @@ var app = angular.module('unassigned', [])
 		'authorLink': '',
 		'backImg': 'https://s3.amazonaws.com/compressionaddict/mind_games.jpg',
 		'link': 'http://www.compressionaddict.com/posts/mind/building-conscious-machines-the-hard-problem-delusion'
-	}
-	];
+	}];
 }])
 .directive('backImg', [
 	function(){
