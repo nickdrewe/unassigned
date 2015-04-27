@@ -85,7 +85,7 @@ var app = angular.module('unassigned', [])
 	{
 		'type': 'Article',
 		'title': 'Instagram\'s Sex Censorship is Inconsistent and Hilarious',
-		'subtitle': 'Not only is Instagram\'s censorship policy nonsensical and inconsistent—it\'s hilariously absurd.',
+		'subtitle': 'Not only is Instagram\'s censorship policy nonsensical and inconsistent  - it\'s hilariously absurd.',
 		'backImg': 'http://i.imgur.com/VuQxDzo.jpg',
 		'link': 'http://www.thedailybeast.com/articles/2013/10/30/instagram-s-sex-censorship-is-inconsistent-and-hilarious.html',
 		'author': 'By Nick Drewe for The Daily Beast',
