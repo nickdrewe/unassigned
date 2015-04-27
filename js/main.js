@@ -3,7 +3,7 @@ var app = angular.module('unassigned', [])
 	$scope.list = [
 	{
 		'type': 'We Built',
-		'title': 'LCOATION:Unassigned',
+		'title': 'LCOATION : Unassigned',
 		'subtitle': 'Discover photos and people near you on Instagram, or in any location around the world.',
 		'backImg': 'http://i.imgur.com/ydXoV91.jpg',
 		'link': 'http://location.unassigned.co'
@@ -21,6 +21,20 @@ var app = angular.module('unassigned', [])
 		'subtitle': 'Send an Anonymous Picture Message to Any Phone Number',
 		'backImg': 'http://ruffle.us/images/bg.jpg',
 		'link': 'http://ruffle.us'
+	},
+	{
+		'type': 'We\'re Building',
+		'title': 'Nurture',
+		'subtitle': 'The future of AI development',
+		'backImg': 'http://i.imgur.com/3fXU2nB.jpg',
+		'link': 'http://www.nurture.ai/'
+	},
+	{
+		'type': 'We\'re Building',
+		'title': 'memeBig - A New Kind of Social Network',
+		'subtitle': 'Share what you do, and why.',
+		'backImg': 'http://i.imgur.com/cXeyJ31.png',
+		'link': 'http://memebig.com'
 	},
 	{
 		'type': 'We\'re Building',
@@ -78,7 +92,7 @@ var app = angular.module('unassigned', [])
 	},
 	{
 		'type': 'Article',
-		'title': 'This Year’s Triple J Hottest 100 Was Totally Hackable',
+		'title': 'This Year\'s Triple J Hottest 100 Was Totally Hackable',
 		'subtitle': 'Submitting thousands of fake votes was easy',
 		'backImg': 'http://i.imgur.com/qiO0agC.jpg',
 		'link': 'http://www.vice.com/en_au/read/this-years-triple-j-hottest-100-was-totally-hackable',

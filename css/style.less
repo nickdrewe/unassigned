@@ -1,12 +1,11 @@
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-family: 'Roboto', sans-serif;*/
-/*font-family: 'Roboto Condensed', sans-serif;*/
-/*font-family: 'Oswald', sans-serif;*/
-
+@under1000:   ~"only screen and (max-width: 1000px)";
+@under800:    ~"only screen and (max-width: 800px)";
+@under500:    ~"only screen and (max-width: 500px)";
 
 body{
 	margin: 0px;
 	font-family: 'Oswald', sans-serif;
+	background-color: #000;
 }
 a{
 	text-decoration: none;
@@ -24,6 +23,7 @@ a{
 	margin-bottom: -65px;
 	background-image: url(/img/vignette.png), url(http://i.imgur.com/yzXrmWf.jpg);
 	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
 	background-size: 100% 100%, cover;
 }
 .header-wrapper{
@@ -41,6 +41,8 @@ a{
 	width: 100%;
 	/*margin: 0 80px;*/
 	text-align: center;
+	padding: 0 20px;
+	box-sizing: border-box;
 
 	-webkit-transform: translateZ(1px) rotateZ(-2.5deg);
 	-moz-transform: translateZ(1px) rotateZ(-2.5deg);
@@ -58,6 +60,11 @@ a{
 	background-color: rgba(0,0,0,0.6);
 	font-weight: 400;
 	padding: 0 10px;
+
+	-webkit-box-decoration-break: clone;
+	-ms-box-decoration-break: clone;
+	-o-box-decoration-break: clone;
+	box-decoration-break: clone;
 
 }
 .header-title{
@@ -115,7 +122,7 @@ a{
 	display: table-cell;
 	width: 50%;
 	border-top: 10px solid rgba(0,0,0,.7);
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
@@ -124,15 +131,6 @@ a{
 	-o-transform: translateZ(1px) skew(-2.5deg);
 	-ms-transform: translateZ(1px) skew(-2.5deg);
 	transform: translateZ(1px) skew(-2.5deg);
-
-	-webkit-transition: background-size 1s ease;
-	   -moz-transition: background-size 1s ease;
-	     -o-transition: background-size 1s ease;
-	        transition: background-size 1s ease;
-
-	&:hover{
-		background-size: 110%;
-	}
 }
 .person-left{
 	box-sizing:border-box;
@@ -168,7 +166,7 @@ a{
 	margin-bottom: 10px;
 }
 .person-detail{
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.8);
 	font-weight: 400;
 	padding: 0 10px;
 
@@ -210,7 +208,7 @@ a{
 	color: #FFF;
 
 	/*Dots , Background*/
-	background-size: auto, 100%;
+	background-size: auto, cover;
 	background-position: center;
 	background-repeat: repeat, no-repeat;
 
@@ -225,15 +223,6 @@ a{
 	-o-transform: translateZ(1px) rotateZ(-2.5deg);
 	-ms-transform: translateZ(1px) rotateZ(-2.5deg);
 	transform: translateZ(1px) rotateZ(-2.5deg);
-
-	-webkit-transition: background-size 1s ease;
-	   -moz-transition: background-size 1s ease;
-	     -o-transition: background-size 1s ease;
-	        transition: background-size 1s ease;
-
-	&:hover{
-		background-size: auto, 110%;
-	}
 }
 .item-top{
 	border-top: 10px solid rgba(0,0,0,.8);
@@ -285,7 +274,7 @@ a{
 	margin-bottom: 10px;
 }
 .item-detail{
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.8);
 	font-weight: 400;
 	padding: 0 10px;
 	/*padding: 5px 20px;*/
@@ -302,10 +291,6 @@ a{
 .item-pattern{
 	background-size: auto, 200px;
 	background-repeat: repeat,repeat;
-
-	&:hover{
-		background-size: auto, 210px;
-	}
 }
 
 /*bounce*/
@@ -324,6 +309,76 @@ a{
   0%, 10%, 25%, 40%, 100%	{ bottom:0px; }
   20%						{ bottom:14px; }
   30%						{ bottom:7px; }
+}
+
+@media @under1000{
+
+	.header-title{
+		font-size: 70px;
+		margin-bottom: 20px;
+
+	}
+	.header-subtitle-1{
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+	.header-subtitle-2{
+		font-size: 25px;
+		margin-bottom: 60px;
+	}
+	.header-scroll-down{
+		font-size: 45px;
+	}
+}
+
+@media @under800{
+	.people{
+		display: block;
+	}
+	.person{
+		display: block;
+		width: 100%;
+		background-size: cover;
+	
+	}
+	.person-container-left{
+		margin: 0 100px;
+	}
+}
+
+@media @under500{
+	.header-title{
+		font-size: 50px;
+		margin-bottom: 20px;
+
+	}
+	.header-subtitle-1{
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+	.header-subtitle-2{
+		font-size: 20px;
+		margin-bottom: 60px;
+	}
+	.header-scroll-down{
+		font-size: 45px;
+	}
+	.item-container{
+		padding: 75px 0;
+		margin: 0 40px;
+	}
+	.item-title{
+		font-size: 35px;
+	}
+	.item-subtitle{
+		font-size: 25px;
+	}
+	.person-container{
+		margin: 0 40px;
+	}
+	.person-container-left{
+		margin: 0 55px;
+	}
 }
 
 
