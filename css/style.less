@@ -20,9 +20,9 @@ a{
 	height: 100%;
 	
 	margin-bottom: -65px;
-	background-image: url(/img/vignette.png), url(/img/bg.png);
-	background-repeat: no-repeat, repeat;
-	background-size: 100% 100%, 400px;
+	background-image: url(/img/vignette.png), url(http://i.imgur.com/yzXrmWf.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% 100%, cover;
 }
 .header-wrapper{
 	-webkit-transform: translateZ(1px) skew(-2.5deg);
@@ -35,7 +35,8 @@ a{
 	color: #FFF;
 	display: inline-block;
 	width: 100%;
-	margin: 0 80px;
+	/*margin: 0 80px;*/
+	text-align: center;
 
 	-webkit-transform: translateZ(1px) rotateZ(-2.5deg);
 	-moz-transform: translateZ(1px) rotateZ(-2.5deg);
@@ -48,19 +49,33 @@ a{
 	-ms-box-decoration-break: clone;
 	-o-box-decoration-break: clone;
 	box-decoration-break: clone;
-
-	
 }
 .header-text{
 	background-color: rgba(0,0,0,0.6);
 	font-weight: 400;
 	padding: 0 10px;
+
 }
 .header-title{
 	font-size: 90px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+
 }
-.header-subtitle{
+.header-subtitle-1{
 	font-size: 45px;
+	margin-bottom: 80px;
+}
+.header-subtitle-2{
+	font-size: 35px;
+	margin-bottom: 60px;
+}
+.header-scroll-down{
+	display: inline-block;
+	/*background-color: rgba(0,0,0,0.6);*/
+	padding: 10px;
+	font-size: 50px;
+	color: rgba(0,0,0,0.6);
 }
 .header-space{
 	height: 100%;
@@ -286,6 +301,24 @@ a{
 	&:hover{
 		background-size: auto, 210px;
 	}
+}
+
+/*bounce*/
+.bounce {
+  position:fixed;
+  /*left:50%;*/
+  bottom:0;
+  /*margin-top:-25px;*/
+  margin-left:-35px;
+  /*height:25px;
+  width:50px;*/
+  -webkit-animation:bounce 4s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 10%, 25%, 40%, 100%	{ bottom:0px; }
+  20%						{ bottom:14px; }
+  30%						{ bottom:7px; }
 }
 
 
