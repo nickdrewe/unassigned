@@ -3,7 +3,7 @@ var app = angular.module('unassigned', [])
 	$scope.list = [
 	{
 		'type': 'We Built',
-		'title': 'LCOATION : Unassigned',
+		'title': 'LOCATION : Unassigned',
 		'subtitle': 'Discover photos and people near you on Instagram, or in any location around the world.',
 		'backImg': 'http://i.imgur.com/ydXoV91.jpg',
 		'link': 'http://location.unassigned.co'
